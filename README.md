@@ -1,77 +1,132 @@
-# Real-Time Chat Application with Socket.io
+# Real Time Chat Application with Socket.io
 
-This assignment focuses on building a real-time chat application using Socket.io, implementing bidirectional communication between clients and server.
+A professional, real-time chat application built with React, Node.js, and Socket.io. Features multiple chat rooms, private messaging, file sharing, read receipts, and real time notifications.
 
-## Assignment Overview
+##  Features
 
-You will build a chat application with the following features:
-1. Real-time messaging using Socket.io
-2. User authentication and presence
-3. Multiple chat rooms or private messaging
-4. Real-time notifications
-5. Advanced features like typing indicators and read receipts
+### Core Features
+- **Real-time messaging** with Socket.io
+- **Multiple chat rooms** (General, Random, Tech)
+- **User authentication** with username-based login
+- **Online user list** with presence indicators
+- **Typing indicators**
 
-## Project Structure
+### Advanced Features
+- **Private messaging** between users
+- **File sharing** with drag & drop support
+- **Message reactions** (like WhatsApp)
+- **Read receipts** with WhatsApp-style ticks
+- **Real time notifications** with sound and browser alerts
+- **Professional UI** with white/purple theme and smooth animations
 
-```
-socketio-chat/
-├── client/                 # React front-end
-│   ├── public/             # Static files
-│   ├── src/                # React source code
-│   │   ├── components/     # UI components
-│   │   ├── context/        # React context providers
-│   │   ├── hooks/          # Custom React hooks
-│   │   ├── pages/          # Page components
-│   │   ├── socket/         # Socket.io client setup
-│   │   └── App.jsx         # Main application component
-│   └── package.json        # Client dependencies
-├── server/                 # Node.js back-end
-│   ├── config/             # Configuration files
-│   ├── controllers/        # Socket event handlers
-│   ├── models/             # Data models
-│   ├── socket/             # Socket.io server setup
-│   ├── utils/              # Utility functions
-│   ├── server.js           # Main server file
-│   └── package.json        # Server dependencies
-└── README.md               # Project documentation
-```
+### Technical Features
+- **Responsive design** for desktop and mobile
+- **Auto reconnection** for network issues
+- **Message persistence** within rooms
+- **Optimized performance** with message pagination
+- **Professional icons** with Font Awesome
 
-## Getting Started
+##  Tech Stack
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Follow the setup instructions in the `Week5-Assignment.md` file
-4. Complete the tasks outlined in the assignment
+### Frontend
+- React 18
+- Vite
+- Socket.io Client
+- Font Awesome Icons
+- CSS3 with Animations
 
-## Files Included
+### Backend
+- Node.js
+- Express.js
+- Socket.io
+- CORS
 
-- `Week5-Assignment.md`: Detailed assignment instructions
-- Starter code for both client and server:
-  - Basic project structure
-  - Socket.io configuration templates
-  - Sample components for the chat interface
+##  Installation
 
-## Requirements
-
+### Prerequisites
 - Node.js (v18 or higher)
 - npm or yarn
-- Modern web browser
-- Basic understanding of React and Express
 
-## Submission
+### Local Development
 
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+1. **Clone the repository**
+   ```bash
+   git clone <your-repo-url>
+   cd real-time-communication-with-socket-io
+   ```
+2. **Setup Backend**
+  ``` bash
+  cd server
+  npm install
+  cp .env.example .env
+  npm run dev  
+  ```
+- Server runs on http://localhost:5000
+3. **Setup Frontend**
+  ```bash
+   cd client
+  npm install
+  npm run dev
+  ```
+- Client runs on http://localhost:5173
+4. Open multiple browser tabs and test with different usernames
 
-1. Complete both the client and server portions of the application
-2. Implement the core chat functionality
-3. Add at least 3 advanced features
-4. Document your setup process and features in the README.md
-5. Include screenshots or GIFs of your working application
-6. Optional: Deploy your application and add the URLs to your README.md
+## Deployment
+- Backend on Render 
+- Frontend to Vercel
 
-## Resources
+## Usage
+- Join Chat: Enter your username to join the default room
+- Switch Rooms: Click on different rooms in the sidebar
+- Send Messages: Type in the input and press Enter or click Send
+- Private Messages: Click on any user in the online list to send private messages
+- Share Files: Click the paperclip icon to upload and share files
+- React to Messages: Click the smiley face to add reactions
+- Notifications: Click the bell icon to view notifications
 
-- [Socket.io Documentation](https://socket.io/docs/v4/)
-- [React Documentation](https://react.dev/)
-- [Express.js Documentation](https://expressjs.com/)
-- [Building a Chat Application with Socket.io](https://socket.io/get-started/chat) 
+## Features in detail
+**Real-time Communication**
+- Instant message delivery across all connected clients
+- Live typing indicators
+- User join/leave notifications
+
+**Multiple Rooms**
+- Separate conversations in different rooms
+- Room-specific user lists and messages
+- Easy room switching
+
+**File Sharing**
+- Support for various file types
+- File size validation (5MB limit)
+- Download functionality for shared files
+
+**Notifications**
+- Sound alerts for new messages
+- Browser notifications when app is in background
+- Unread message counters
+
+**Professional UI**
+- Clean white and purple color scheme
+- Smooth animations and transitions
+- Responsive design for all devices
+- Professional Font Awesome icons
+
+## API Endpoints
+
+
+## Socket Events
+- ```user_join``` - User joins chat
+- ```send_message``` - Send chat message
+- ```private_message``` - Send private message
+- ```send_file``` - Share file
+- ```typing``` - Typing indicator
+- ```message_reaction``` - Add reaction to message
+- ```message_read``` - Mark message as read
+
+## License
+This project is protected under MIT License. See [License](License)
+
+## Developed By:
+Natalie Awinja @Keli281
+
+
