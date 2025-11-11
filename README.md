@@ -111,8 +111,12 @@ A professional, real-time chat application built with React, Node.js, and Socket
 - Responsive design for all devices
 - Professional Font Awesome icons
 
-## API Endpoints
+## Demo
+[View live app here](https://xochat.vercel.app)
 
+![demo 1](client/public/demo1.png)
+![demo 2](client/public/demo2.png)
+![demo 3](client/public/demo3.png)
 
 ## Socket Events
 - ```user_join``` - User joins chat
